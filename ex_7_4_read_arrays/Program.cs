@@ -46,16 +46,8 @@ namespace ex_7_4_read_arrays
                 Console.Write("arr2[{0}] = ", i);
                 a2[i] = int.Parse(Console.ReadLine());
             }
+
             //Two arrays are equal if they have the same value for the length and the values for their elements.
-
-            /*
-            From Kacy: I have reviewed problem 4 in the arrays section. 
-            It does not quite function properly. It needs a few tweaks, 
-            such as an else statement if the lengths are not equal. 
-            also the way the for loop runs and outputs to the console makes it a little 
-            unclear what the result is. Can you clean this up a little?
-            */
-
             if (a1.Length == a2.Length)
             {
                 for (int i = 0; i < n2; i++)
