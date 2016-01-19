@@ -47,15 +47,24 @@ namespace ex_7_4_read_arrays
             }
             //Two arrays are equal if they have the same value for the length and the values for their elements.
 
-            if ((a1 == a2) && (a1.Length == a2.Length))
+            if (a1.Length == a2.Length)
                 {
-                Console.WriteLine("are equal?");
-                Console.ReadKey();
+                for (int i = 0; i < n2; i++)
+                    {
+                    if (a1[i] == a2[i])
+                        {
+                        Console.WriteLine("are equal?");
+                        Console.ReadKey();
+                        }
+                    else
+                        {
+                        Console.WriteLine("not equal?");
+                        Console.ReadKey();
+                        }
+                    Console.WriteLine("not equal?");
+                    Console.ReadKey();
                 }
-                Console.WriteLine("not equal?");
-                Console.ReadKey();
-              
-                
-        }
+            }
+        }  
     }
 }
